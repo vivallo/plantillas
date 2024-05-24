@@ -1,0 +1,64 @@
+ <section id="productos" class="seccion-pag container-fluid" style="background:#900;font-family: 'roboto-libiano'">
+  <div class="row">
+    <div class="container">
+      <div class="row d-block">
+
+        <div class="col-12 text-center pt-5 pb-3">
+          <h1>PRODUCTOS</h1>
+        </div>
+
+        <div class="col-auto text-center mt-3 mb-3">
+          <div id="botones" class="col-auto d-flex flex-wrap flex-lg-nowrap justify-content-center menuProductos">
+<!--            <span class="float-left"><button><i class="fa fa-calculator"></i> Cotizar</button>&nbsp;&nbsp;&nbsp;</span>-->
+            <ul class="filtroLista">
+              <?php $args = array(
+                'show_option_all'   => 'Todo',
+                'show_option_none'  => 'Sin Categorias',  
+                'title_li'          => __(''),
+                'taxonomy'          => 'tipo_producto',
+                'style'             => 'list',
+              );
+              wp_list_categories($args);
+              ?>
+            </ul>
+          </div>
+        </div>
+          <?php 
+           $args = array(  
+            'post_type'     => 'productos',
+            'no_found_rows' => false,
+            'post__not_in'  => array (
+              $post->ID
+            ),
+//            'tax_query' => array(
+//              array(
+//                'taxonomy' => 'tipo_producto',
+//                'field'    => 'slug',
+//                'terms'    => $nombre,
+//              ),
+//            ),
+           ) ;
+
+            $consulta = new WP_Query($args);
+            $cont = 0;
+
+            if($consulta->have_posts()) :?>
+            
+
+        <div class="col pb-5 pl-0 pr-0 m-0 galeria" id="galeriaLista">
+
+          <div class="row no-gutters galeriaMenu" id="cProductos">
+            <?php
+            while($consulta->have_posts()) : $consulta->the_post();
+            
+             get_template_part( 'template-parts/cuerpo', 'producto' );
+            
+             $cont++; endwhile; wp_reset_postdata(); ?>
+             
+          </div>  
+        </div>
+             <?php endif; ?>
+      </div>
+    </div>
+  </div>
+</section>

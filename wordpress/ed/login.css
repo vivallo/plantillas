@@ -1,0 +1,81 @@
+body {
+  height: 100%;
+  background-image: url(img/fondoInicio.jpg);
+  background-repeat: no-repeat;
+  background-size: auto auto;
+  background-attachment: fixed;
+  background-position-x: 25%;
+  background-color: #8c0000;
+}
+@media screen and (min-width: 1200px ) {
+ body {
+    background-image: url(img/fondoInicio.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+.login form {
+  background: none;
+  border: none;
+}
+.login h1 a {
+  width: 100%;
+  height: 84px;
+  margin: 0;
+  background-image: url(img/IsotipoEaDinicio.png);
+  background-size: auto 100%;
+}
+#login_error, p.message {
+  color: #fff;
+  margin-top: 15px;
+  background: none!important;
+  border-left: 4px solid #ffcc33!important;
+  box-shadow: none!important;
+  text-shadow: 2px 1px #000;
+}
+#login_error { border-left: 4px solid #e9003c!important;}
+
+.login label { color: white; }
+
+input[type=checkbox]:focus, input[type=color]:focus, input[type=date]:focus, input[type=datetime-local]:focus, input[type=datetime]:focus, input[type=email]:focus, input[type=month]:focus, input[type=number]:focus, input[type=password]:focus, input[type=radio]:focus, input[type=search]:focus, input[type=tel]:focus, input[type=text]:focus, input[type=time]:focus, input[type=url]:focus, input[type=week]:focus, select:focus, textarea:focus {
+    border-color: #fc3;
+    box-shadow: 0 0 0 1px #d9ae2b;
+    outline: 2px solid transparent;
+}
+.input[type=checkbox]:checked::before { color: #900!important; }
+.login .button-primary {
+  width: 100%;
+  border: 0;
+  color: black;
+  text-shadow: none;
+  box-shadow: none;
+  margin-top: 40px;
+  padding: 10px 30px !important;
+  background-color: #fc3;
+}
+.login .button-primary:hover, .login .button-primary:active, .login .button-primary:focus {
+  background: #d9ae2b;
+  background-color: #d9ae2b;
+  border-color:#fc3!important;
+  color: black;
+}
+.login .button-primary:focus { box-shadow: 0 0 0 1px #900, 0 0 0 3px #d9ae2b; }
+
+.login p,
+.user-pass-wrap,
+.login #backtoblog a,
+.login #nav a,
+.privacy-policy-page-link a {
+  color: white;
+  text-shadow: 2px 1px #000;
+}
+
+.dashicons-visibility, .dashicons-hidden { color: #900; }
+
+.login #backtoblog a:hover,
+.login #nav a:hover,
+.privacy-policy-page-link a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-shadow: 2px 1px #000;
+}
