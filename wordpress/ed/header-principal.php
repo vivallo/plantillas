@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <title>Rivera y Castro | extintores</title>
+<head><meta http-equiv="Content-Type" content="text/html; charset=big5">
+  <title>Extintores a Domicilio</title>
   
-  <meta charset="UTF-8">
+  
   <meta name="theme-color" content="#990000">
-  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"/>
+  
   <meta name="viewport" content="width=divice-width, initial-scale=1, maximun-scale=1"/>
   <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
   
@@ -20,7 +20,7 @@
   
   <?php wp_head(); ?>
   
-  <link rel="stylesheet"  href="<?php //bloginfo('stylesheet_url'); ?>">
+  <link rel="stylesheet"  href="<?php bloginfo('stylesheet_url'); ?>">
 </head>
 <body>
  
@@ -34,22 +34,23 @@
        
         <div class="col-12 col-sm-9 col-md-8">
           <p id="textoUno">
-           <?php $fijos = cmb2_get_option('OpcionCyRubicacion', 'listaFonoFijo'); ?>
-           <?php $fonos = cmb2_get_option('OpcionCyRubicacion', 'listaFonos'); ?>
-           <?php $correos = cmb2_get_option('OpcionCyRubicacion', 'listaCorreos'); ?>
-           <?php $direcciones = cmb2_get_option('OpcionCyRubicacion', 'listaDirecciones'); ?>
-            <i class="icon-cyr-fono"></i> <b>Fonos:</b> <span id="txtEfecto1"><?php $contFF = 1; if(!empty($fijos)) { foreach($fijos as $fijo) { if($contFF == 1) { echo $fijo;  if(!$fijos==''&&!$fonos=='') { echo ' - '; } } $contFF++; } } $contF = 1; if(!empty($fonos)) { foreach($fonos as $fono) { if($contF == 1) { echo $fono;} $contF++; } } ?></span>
+		   <?php $datosUbicar = get_option('OpcionCyRubicacion'); ?>
+            <i class="icon-cyr-fono"></i> <!-- <b>Fonos:</b>--> <span id="txtEfecto1"><?php if(isset($datosUbicar['fijoUno'])) echo $datosUbicar['fijoUno']; if(isset($datosUbicar['fijoUno'])&&isset($datosUbicar['movilUno'])) echo ' - '; echo $datosUbicar['movilUno']; ?></span>
+            <span class="d-none d-lg-inline"> | </span>
+			<i class="icon-cyr-whatsapp"></i> <!-- <b>WhatsApp:</b> --> <span id="txtEfecto1"><?php echo $datosUbicar['WaUno']; ?></span>
             <span class="d-none d-lg-inline"> | </span>
             <br class="d-inline d-lg-none">
-            <i class="icon-cyr-correo"></i> <b>Correo:</b> <span id="txtEfecto2"><?php $contC = 1; foreach($correos as $correo) { if($contC == 1) { echo $correo;} $contC++; } ?></span><br>
-            <i class="icon-cyr-direccion"></i> <b>Dirección:</b><span id="txtEfecto3"> <?php $contD = 1; foreach($direcciones as $direccion) { if($contD == 1){ echo $direccion; $contD++; } }?></span>
+            <i class="icon-cyr-correo"></i> <!-- <b>Correo:</b> --> <span id="txtEfecto2"><?php echo $datosUbicar['correoUno']; ?></span><br>
+            <i class="icon-cyr-direccion"></i> <!-- <b>Dirección:</b> --> <span id="txtEfecto3"> <?php echo $datosUbicar['direccionUno']; ?></span>
           </p>
         </div>
         
         <div class="col-12 col-sm-3 col-md-4 icono-social d-flex justify-content-around justify-content-sm-end">
-       <?php $iconos = cmb2_get_option('OpcionCyRubicacion', 'rSociales'); ?>
-       <?php foreach($iconos as $icono) { ?><a href="<?php echo $icono['direccionURL'];?>" target="_blank"><i class="icon-cyr-<?php echo $icono['redSocial'];?>"></i></a>
-        <?php } ?>
+	  <?php if(!$datosUbicar['facebook']=='') ?><a href="<?php echo $datosUbicar['facebook']; ?>" target="_blank"><i class="icon-cyr-<?php if(isset($datosUbicar['facebook'])) echo 'facebook'; ?> "></i></a><?php ; ?>
+          <?php if(!$datosUbicar['twitter']=='') ?><a href="<?php echo $datosUbicar['twitter']; ?>" target="_blank"><i class="icon-cyr-<?php if(isset($datosUbicar['twitter'])) echo 'twitter'; ?> "></i></a><?php ; ?>
+          <?php if(!$datosUbicar['instagram']=='') ?><a href="https://www.instagram.com/<?php echo $datosUbicar['instagram']; ?>/" target="_blank"><i class="icon-cyr-<?php if(isset($datosUbicar['instagram'])) echo 'instagram'; ?> "></i></a><?php ; ?>
+          <?php if(!$datosUbicar['linkedin']=='') ?><a href="<?php echo $datosUbicar['linkedin']; ?>" target="_blank"><i class="icon-cyr-<?php if(isset($datosUbicar['linkedin'])) echo 'linkedin'; ?> "></i></a><?php ; ?>
+          <?php if(!$datosUbicar['youtube']=='') ?><a href="<?php echo $datosUbicar['youtube']; ?>" target="_blank"><i class="icon-cyr-<?php if(isset($datosUbicar['youtube'])) echo 'youtube'; ?> "></i></a><?php ; ?>
         </div>
         
       </div>      
@@ -58,5 +59,3 @@
       </div>
      </div>
     </div>
-    <!--  <link rel="stylesheet" href="/css/fontello/css/fontello.css" type="text/css">-->
-    
