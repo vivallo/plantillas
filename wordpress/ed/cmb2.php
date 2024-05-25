@@ -23,7 +23,7 @@ if ( file_exists( dirname( __FILE__ ) . '/cmb2/init.php' ) ) {
 
 
 // este return es para no ver los ejemplos de cmb2
-//return;
+return;
 /**
  * Conditionally displays a metabox when used as a callback in the 'show_on_cb' cmb2_box parameter
  *
