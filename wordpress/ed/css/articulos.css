@@ -1,0 +1,334 @@
+.wrapper { max-width: 100%; }
+
+.tarjetas {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.tarjeta {
+  margin: 30px 1px 0 1px;
+  width: calc((100% / 5) - 2px);
+  transition: all 0.2s ease-in-out;
+}
+@media screen and (max-width: 991px) {
+  .tarjeta { width: calc((100% / 4) - 2px); }
+}
+@media screen and (max-width: 767px) {
+  .tarjeta { width: calc((100% / 3) - 2px); }
+}
+@media screen and (max-width: 575px) {
+  .tarjeta { width: calc((100% / 2) - 2px); }
+}
+@media screen and (max-width: 360px) {
+  .tarjeta { width: 100%; }
+}
+
+.tarjeta:hover .tarjeta__inner {
+  background-color: #fc3;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  color: #333;
+}
+.tarjeta__inner {
+  width: 100%;
+  position: relative;
+  cursor: pointer;
+  background-color: #f2f2f2;
+  color: #333;
+  transition: all 0.2s ease-in-out;
+}
+.tarjeta__inner img {
+  width: 100%;
+  height: auto;
+}
+.tarjeta__inner:after {
+  transition: all 0.3s ease-in-out;
+}
+.tarjeta__inner .fa {
+  width: 100%;
+  margin-top: .25em;
+}
+.tarjeta__expander {
+  transition: all 0.2s ease-in-out;
+  background-color: #fc3;
+  color: #333;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: top;
+}
+.tarjeta__expander .fa {
+  font-size: 0.75em;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.tarjeta__expander .fa:hover { opacity: 0.9; }
+
+.tarjeta__expander .img {
+  padding: 15px;
+  width: 33.3%;
+  transition: all 0.2s ease-in-out;
+}
+
+.tarjeta__expander .detalles img {
+  margin: 5px;
+  width: calc((100% / 4) - 10px);
+  border: 1px solid #ccc;
+}
+@media screen and (max-width: 767px) {
+  .tarjeta__expander .detalles img {
+    width: calc((100% / 5) - 10px);
+  }
+}
+.tarjeta__expander .des {
+  padding: 15px;
+  width: 66.7%;
+  transition: all 0.2s ease-in-out;
+}
+.tarjeta__expander .des { font-size: 14px; }
+.tarjeta__expander .des .tab-pane { padding: 15px; }
+.tarjeta__expander .detalles h2 { font-size: 28px; }
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #fff;
+    background-color: #b18e27;
+    border-color: #f93 #f93 #febc36;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: #f93 #f93 #febc36;
+}
+.nav-tabs { border-bottom: 1px solid #f93; }
+a {
+    color: #333;
+    text-decoration: none;
+    background-color: transparent;
+}
+a:hover { color: #333; }
+
+@media screen and (max-width: 767px) {  
+  .tarjeta__expander { display: block; }
+  .tarjeta__expander .img, .tarjeta__expander .des { width: 100%; } 
+}
+.tarjeta .texto {
+  /*height: 232px;*/
+  padding: 0 15px;
+}
+.tarjeta img { width:100% ; }
+.tarjeta .texto .tipo {
+  font-weight: bold;
+  font-size: 13px;
+  margin: 5px 0 0 0;
+  text-transform: capitalize;
+}
+.tarjeta .texto h1 {
+  height: 58px;
+  margin: 0;
+  overflow: hidden;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px){
+  .tarjeta .texto h1 { font-size: 1.24em; }
+}
+@media screen and (min-width: 576px) and (max-width: 991px){
+  .tarjeta .texto h1 { font-size: 1.14em; }
+}
+.tarjeta .texto .resenia {
+  font-size: 15px;
+  height: 48px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .tarjeta .texto .resenia { font-size: .82em; height: 43px; }
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .tarjeta .texto .resenia { font-size: .7em; height: 37px; }
+}
+.tarjeta .texto .destacar {
+  color: #b00;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+.tarjeta .texto .destacar2 {
+  color: #333;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .tarjeta .texto .destacar, .tarjeta .texto .destacar2 { font-size: 1.25em; }
+}
+@media screen and (min-width: 576px) and (max-width: 991px) {
+  .tarjeta .texto .destacar, .tarjeta .texto .destacar2 { font-size: 1.2em; }
+}
+.tarjeta .texto sup span { text-decoration: line-through; }
+.tarjeta h1 { font-size: 24px ; }
+.tarjeta h2 { font-size: 14px ; }
+
+.tarjeta .boton {
+  height: 50px;
+  font-size: 24px ;
+  line-height: 50px;
+  border-top: 1px solid #fff;
+  text-align: center;
+}
+
+
+.tarjeta.is-collapsed .tarjeta__inner:after {
+  content: "";
+  opacity: 0;
+}
+.tarjeta.is-collapsed .tarjeta__expander {
+  max-height: 0;
+  min-height: 0;
+  overflow: hidden;
+  margin-top: 0;
+  opacity: 0;
+}
+.tarjeta.is-expanded .tarjeta__inner {
+  background-color: #fc3;
+  color: #333;
+}
+.tarjeta.is-expanded .tarjeta__inner:after {
+  content: "";
+  opacity: 1;
+  display: block;
+  height: 0;
+  width: 0;
+  position: absolute;
+  bottom: -30px;
+  left: calc(50% - 15px);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #fc3;
+}
+.tarjeta.is-expanded .tarjeta__inner .fa:before { content: "\f068"; }
+.tarjeta.is-expanded .tarjeta__expander {
+  max-height: 508px;
+  min-height: 508px;
+  overflow: hidden;
+  margin: 30px 0;
+  opacity: 1;
+}
+.tarjeta.is-expanded:hover .tarjeta__inner {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.tarjeta.is-inactive .tarjeta__inner {
+  pointer-events: none;
+  opacity: 0.5;
+}
+.tarjeta.is-inactive:hover .tarjeta__inner {
+  background-color: #fc3;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.tabla {
+  overflow-y: auto;
+  height: 400px;
+}
+.tablaEspecifica { width: 100%; }
+.tablaEspecifica thead tr {
+  background-color: #000;
+  color: #fff;
+}
+.tablaEspecifica thead tr th { padding: 15px; }
+.tablaEspecifica tbody tr td { padding: 5px 15px; }
+.tablaEspecifica tbody tr td:first-child {
+  width: 25%;
+  border-right: 1px solid #fc3;
+}
+.tablaEspecifica tbody tr td:last-child {
+  width: 75%;
+  border-left: 1px solid #fc3;
+}
+
+.tablaEspecifica tbody tr:nth-child(odd) {
+  background-color:rgba(0,0,0,.25);
+  color: #fff;
+}
+.tablaEspecifica tbody tr:nth-child(even) {
+  background-color:rgba(0,0,0,.5);
+  color: #fff;
+}
+
+@media screen and (min-width: 1200px) {
+  .tarjeta:nth-of-type(5n+2) .tarjeta__expander {
+    margin-left: calc(-100% - 2px);
+  }
+  .tarjeta:nth-of-type(5n+3) .tarjeta__expander {
+    margin-left: calc(-100% - 230px);
+  }
+  .tarjeta:nth-of-type(5n+4) .tarjeta__expander {
+    margin-left: calc(-100% - 458px);
+  }  
+  .tarjeta:nth-of-type(5n+5) .tarjeta__expander {
+    margin-left: calc(-100% - 686px);
+  }
+
+  .tarjeta:nth-of-type(5n+6) { clear: left; }
+
+  .tarjeta__expander { width: calc(500% + 8px); }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .tarjeta:nth-of-type(5n+2) .tarjeta__expander {
+    margin-left: calc(-100% - 2px);
+  }
+  .tarjeta:nth-of-type(5n+3) .tarjeta__expander {
+    margin-left: calc(-200% - 4px);
+  }
+  .tarjeta:nth-of-type(5n+4) .tarjeta__expander {
+    margin-left: calc(-300% - 6px);
+  }  
+  .tarjeta:nth-of-type(5n+5) .tarjeta__expander {
+    margin-left: calc(-400% - 8px);
+  }
+
+  .tarjeta:nth-of-type(5n+6) { clear: left; }
+
+  .tarjeta__expander { width: calc(500% + 8px); }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .tarjeta:nth-of-type(4n+2) .tarjeta__expander {
+    margin-left: calc(-100% - 2px);
+  }
+  .tarjeta:nth-of-type(4n+3) .tarjeta__expander {
+    margin-left: calc(-200% - 4px);
+  }
+  .tarjeta:nth-of-type(4n+4) .tarjeta__expander {
+    margin-left: calc(-300% - 6px);
+  }
+  .tarjeta:nth-of-type(4n+5) { clear: left; }
+
+  .tarjeta__expander { width: calc(400% + 6px); }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  .tarjeta:nth-of-type(3n+2) .tarjeta__expander {
+    margin-left: calc(-100% - 2px);
+  }
+  .tarjeta:nth-of-type(3n+3) .tarjeta__expander {
+    margin-left: calc(-200% - 4px);
+  }
+  .tarjeta:nth-of-type(3n+4) { clear: left; }
+
+  .tarjeta__expander { width: calc(300% + 4px); }
+}
+
+@media screen and (min-width: 360px) and (max-width: 575px) {
+  .tarjeta:nth-of-type(2n+2) .tarjeta__expander {
+    margin-left: calc(0 - 2px);
+  }
+
+  .tarjeta:nth-of-type(2n+3) {
+    clear: left;
+  }
+
+  .tarjeta__expander {
+    width: calc(100% + 2px);
+  }
+}
