@@ -1,12 +1,10 @@
 /*
-Theme Name: Extintores A Domicilio
-Theme URI: https://github.com/vivallo/plantillas/blob/main/wordpress/ed/
+Theme Name: ED
+Theme URI: https://github.com/vivallo/plantillas/edit/main/wordpress/ed/
 Author: Web Gráfica
 Author URI: https://webgrafica.cl/
-Description: Tema para mostrar la empresa indicada.
-Version: 1.1.1
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Description: Tema para mostrar la empresa indicada. Exclusiva de esta dirección URL "extintoresadomicilio.cl"
+Version: 1.0.0
 */
 
 @font-face{
@@ -49,7 +47,6 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   url('font/Paragon-Cleaners-Black.ttf') format('truetype'),
   url('font/Paragon-Cleaners-Black.svg#futura_bk_btbook') format('svg');
 }
-
 
 
 body { background-color: #fff !important; color: #ffffff !important; }
@@ -105,16 +102,18 @@ header { width: auto; overflow: hidden; }
 ***********************************/
 
 .menu { background: white; }
-.transicion { transition: all ease .7s; }
+.transicion { transition: all ease .5s; }
 
 .menu .logo {
   height: 172px;
   color: #ec5a23;
   text-align: center;
+  transition: all ease .3s;
 }
 .menu .logo img {
   height: 128px;
   margin-top: 11px;
+  transition: all ease .7s;
 }
 .menu .logo p { 
   font-family: 'Paragon Black';
@@ -127,7 +126,7 @@ header { width: auto; overflow: hidden; }
   font-size: 20.6px;
   font-family: 'roboto-libiano';
   margin: 0 7.5px;
-  transition: all ease .5s;
+  transition: all ease .7s;
   border:1px solid #fff;
 }
 .menu a:hover, .menu a.activo:hover {
@@ -144,10 +143,10 @@ header { width: auto; overflow: hidden; }
   border-radius: 4px;
   border:1px solid rgba(255,255,255,0);
 }
-.menu-b { height: 66px; }
+.menu-b { height: 66px; background: rgba(255,255,255); transition: all ease .5s; }
 .menu-b .logo { height: 66px; }
 .menu-b { box-shadow: 0px 5px 5px -3px rgba(0,0,0,0.3); }
-.menu-b .logo { text-align: left; display:inline-flex; }
+.menu-b .logo { text-align: left; display:inline-flex;}
 .menu-b .logo img { height: 60px; margin-top: 3px; }
 .menu-b .logo p { font-size: 14px; position: absolute;left: 65px; bottom: -16px;}
 .menu-b .menuCentral { height: 40px; }
@@ -183,12 +182,13 @@ header { width: auto; overflow: hidden; }
 .pendon { height:inherit; }
 
 @media screen and ( max-width: 1199px) {
+  .menu, .menu>.row, .menu-b { background: white; transition: all ease .5s; }
   .menu .logo { max-height: 142px; }  
   .menu .logo img { height: 107px; }
   .menu .logo p { font-size: 17.02px; }
   .menu a { line-height: 40px; font-size: 13.85px; margin: 0 7.5px; }
   .menu-b, .menu-b .logo { height: 66px; }  
-  .menu-b .logo img { height: 60px; }
+  .menu-b .logo img { height: 60px; transition: all ease .5s; }
 }
 
 @media screen and ( max-width: 991px) {  
@@ -263,23 +263,19 @@ header { width: auto; overflow: hidden; }
 *
 *termino del servicios
 *
--------------------------------------
-
-
-
+#####################################
 
 #####################################
 *
 * comienzo de la seccion productos
 *
 ***********************************/
-
 #productos {
-  background-image: url(img/fondo-producto.png);
-  background-repeat: repeat-x;
-  background-position: bottom 0 left 0%;
-  background-size: 75% auto;
-  background-color: #B40000;
+  background-image: url(img/fondo_llama.svg);
+  background-size: 30% auto;
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-color: #981000;
   font-family: 'roboto-libiano';
 }
 .menuProductos {
@@ -289,8 +285,8 @@ header { width: auto; overflow: hidden; }
   margin: 0 auto;
   height: auto;
 }
-/*
 .menuProductos button {
+  background: none;
   padding: 0 10px;
   border:none;
   border-right: 5px solid #fff;
@@ -301,76 +297,22 @@ header { width: auto; overflow: hidden; }
 }
 .menuProductos button:hover { text-decoration: underline; }
 .menuProductos button.activo { font-weight: 700; }
-*/
-.menuProductos ul {
-  list-style: none;
-  background: #fff;
-  width: auto;
-  padding: 0;
-  margin: 0;
-}
-.menuProductos ul li {
-  display: inline-block;
-  width: auto;
-}
-.menuProductos ul li a {
-  display: block;
-  padding: 0 10px;
-  line-height: 40px;
-  color: #333;
-  text-transform: capitalize;
-}
 
-/*
 .galeria .galeriaMenu {
-  margin: 0 auto;
-  width: 100%;
-  clear: both;
+  margin: 0 auto; 
 }
 .galeria .galeriaMenu>div {
   color: #333;
-  min-width: 226px;
-  max-width: 226px;
+  min-width: 228px;
+  max-width: 228px;
   min-height: auto;
-  border: 1px solid #900;
+  border: 1px inset #900;
   background: #fff;
 }
 
 .galeria .galeriaMenu div>div { background: #f2f2f2; }
-.galeria .galeriaMenu .texto { height: 232px; }
+.galeria .galeriaMenu .texto { height: 90px; }
 .galeria .galeriaMenu img { width:100% ; }
-.galeria .galeriaMenu .texto .tipo {
-  font-weight: bold;
-  font-size: 13px;
-  margin: 0;
-  text-transform: capitalize;
-}
-.galeria .galeriaMenu .texto h1 {
-  height: 58px;
-  margin: 0;
-  overflow: hidden;
-}
-.galeria .galeriaMenu .texto .resenia {
-  font-size: 15px;
-  height: 48px;
-  margin-bottom: 8px;
-  overflow: hidden;
-}
-.galeria .galeriaMenu .texto .destacar {
-  color: #b00;
-  font-weight: bold;
-  font-size: 22px;
-  margin-bottom: 0;
-}
-.galeria .galeriaMenu .texto .destacar2 {
-  color: #333;
-  font-weight: bold;
-  font-size: 22px;
-  margin-bottom: 0;
-}
-.galeria .galeriaMenu .texto sup span {
-  text-decoration: line-through;
-}
 .galeria .galeriaMenu h1 { font-size: 24px ; }
 .galeria .galeriaMenu h2 { font-size: 14px ; }
 
@@ -397,7 +339,6 @@ header { width: auto; overflow: hidden; }
 .galeria .galeriaMenu .boton .cotizar:hover { background: #fc3; }
 .galeria .galeriaMenu .boton .detalle:hover { color: #fff; background: #ec5a23; }
 
-
 @media screen and ( max-width: 1199px) {
   .galeria .galeriaMenu>div { min-width: 192px; max-width: 193px; min-height: 312px; }
   .galeria .galeriaMenu h1 { font-size: 20.35px ; }
@@ -417,7 +358,7 @@ header { width: auto; overflow: hidden; }
 @media screen and ( max-width: 575px) {
   .galeria .galeriaMenu>div { width: 100% ;max-width: 191px; min-height: 324px; }
 }
-  */
+  
 /*******************************************
 *
 *termino de la seccion productos
@@ -484,7 +425,7 @@ section.somos .colapso .card-body p {
   font-family: 'roboto-normal';
 }
 .colapso .card-body {
-  overflow-x: auto;
+  overflow-x: scroll;
   scrollbar-color: #9a7b1f #ba9525;
   scrollbar-width: thin;
 }
@@ -666,6 +607,7 @@ section.contactoParallax input[type=submit]:hover {
 .pie .secciones li { margin-bottom: 15px; }
 .pie .secciones li a { color: rgba(255,255,255,.3); }
 .pie .secciones li a:hover { color: #ffffff; }
+.pie .secciones li a i { font-size: 12px; }
 .pie .final { border-top: 1px solid rgba(255,255,255,.2)}
 .pie .final .texto { font-size: 14px}
 .pie .final .centro img {
@@ -678,4 +620,3 @@ section.contactoParallax input[type=submit]:hover {
   max-width: 90px;
   margin: 15px;
 }
-
