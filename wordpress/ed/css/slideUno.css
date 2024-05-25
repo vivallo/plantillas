@@ -1,0 +1,201 @@
+@font-face{
+  font-family: 'roboto-libiano';
+  src: url('../font/Roboto-Light.eot');
+  src: url('../font/Roboto-Light.eot?#iefix') format('embedded-opentype'),
+  url('../font/Roboto-Light.woff') format('woff'),
+  url('../font/Roboto-Light.ttf') format('truetype'),
+  url('../font/Roboto-Light.svg#futura_bk_btbook') format('svg');
+}
+@font-face{
+  font-family: 'roboto-normal';
+  src: url('../font/Roboto-Regular.eot');
+  src: url('../font/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../font/Roboto-Regular.woff') format('woff'),
+  url('../font/Roboto-Regular.ttf') format('truetype'),
+  url('../font/Roboto-Regular.svg#futura_bk_btbook') format('svg');
+}
+@font-face{
+  font-family: 'roboto-negra';
+  src: url('../font/Roboto-Bold.eot');
+  src: url('../font/Roboto-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../font/Roboto-Bold.woff') format('woff'),
+  url('../font/Roboto-Bold.ttf') format('truetype'),
+  url('../font/Roboto-Bold.svg#futura_bk_btbook') format('svg');
+}
+.slider {
+  position:relative;
+  margin:0;
+  padding: 0;
+  top:0px;
+  left:0px;
+  width:1200px;
+  height:460px;
+  overflow:hidden;
+  visibility:hidden;
+  background:url('../images/action-adult-blaze.jpg') 50% 50% no-repeat;
+  background-size:cover;
+}
+.jssorl-009-spin {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  height:100%;
+  text-align:center;
+  background-color:rgba(0,0,0,0.7);
+}
+
+.jssorl-009-spin img {
+  animation-name: jssorl-009-spin;
+  animation-duration: 1.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  margin-top:-19px;
+  position:relative;
+  top:50%;
+  width:38px;
+  height:38px;
+}
+.capaUno {
+  cursor:default;
+  position:relative;
+  top:0px;
+  left:0px;
+  width:1200px;
+  height:460px;
+  overflow:hidden;
+}
+.fondoUno {
+  background-image:linear-gradient(135deg,rgba(255,204,51,0.5) 0%,rgba(255,204,51,0.5) 50%,rgba(153,0,0,0.5) 50%,rgba(153,0,0,0.5) 100%);
+}
+.fondoDos {
+  background-image:linear-gradient(135deg,rgba(153,0,0,0.5) 0%,rgba(153,0,0,0.5) 50%,rgba(253,204,51,0.5) 50%,rgba(255,204,51,0.5) 50%,rgba(255,204,51,0.5) 100%);
+}
+.img0, .img1, .img2, .img3, .textoUnoA, .textoUnoB, .textoUnoC, .textoDosA, .textoDosB, .textoDosC { position:absolute; }
+.img0 {
+  top:462px;
+  left:537px;
+  width:616px;
+  height:616px;
+  max-width:616px;
+}
+.img1 {
+  top:-618px;
+  left:18px;
+  width:616px;
+  height:616px;
+  max-width:616px;
+}
+.img2 {
+  top:13px;
+  left:1116px;
+  width:430px;
+  height:430px;
+  max-width:430px;
+}
+.img3 {
+  top:0px;
+  left:-205px;
+  width:410px;
+  height:460px;
+  max-width:410px;
+}
+.textoUnoA, .textoUnoB, .textoUnoC, .textoDosA, .textoDosB, .textoDosC {
+  width: auto;
+  font-family:Roboto,sans-serif;
+  text-transform: uppercase;
+}
+.textoUnoA, .textoUnoB, .textoUnoC { text-align: left; }
+.textoDosA, .textoDosB, .textoDosC { text-align: right; }
+.textoUnoA {
+  top:-35px;
+  left:77px;
+  font-size:32px;
+  font-weight:300;
+  color:#000000;
+}
+@media screen and (max-width: 991px) {
+  .textoUnoA { font-weight:400; }
+}
+@media screen and (max-width: 767px) {
+  .textoUnoA { font-weight:500; }
+}
+.textoUnoB {
+  top:-53px;
+  left:75px;
+  font-size:48px;
+  font-weight:700;
+  color:#990000;
+}
+.textoUnoC {
+  top:-29px;
+  left:76px;
+  font-size:22px;
+  font-weight:300;
+  color:#000000;
+}
+@media screen and (max-width: 991px) {
+  .textoUnoC { font-weight:400; }
+}
+@media screen and (max-width: 767px) {
+  .textoUnoC { font-weight:500; }
+}
+.textoDosA {
+  top:462px;
+  right:77px;
+  font-size:32px;
+  font-weight:300;
+  color:#000000;
+}
+@media screen and (max-width: 991px) {
+  .textoDosA { font-weight:400; }
+}
+@media screen and (max-width: 767px) {
+  .textoDosA { font-weight:500; }
+}
+.textoDosB {
+  top:462px;
+  right:77px;
+  font-size:48px;
+  font-weight:700;
+  color:#990000;
+}
+.textoDosC {
+  top:462px;
+  right:77px;
+  font-size:22px;
+  font-weight:300;
+  color:#000000;
+}
+@media screen and (max-width: 991px) {
+  .textoDosC { font-weight:400; }
+}
+@media screen and (max-width: 767px) {
+  .textoDosC { font-weight:500; }
+}
+
+@keyframes jssorl-009-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.jssora051 {
+  display:block;
+  position:absolute;
+  cursor:pointer;
+  width:65px;
+  height:65px;
+  top:0px;
+}
+.jssora051 .a {fill:none;stroke:#fff;stroke-width:360;stroke-miterlimit:10;}
+.jssora051:hover {opacity:.8;}
+.jssora051.jssora051dn {opacity:.5;}
+.jssora051.jssora051ds {opacity:.3;pointer-events:none;}
+.jssora051 svg {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+}
