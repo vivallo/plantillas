@@ -1,0 +1,188 @@
+{
+  "name": "extintores",
+  "css_prefix_text": "icon-",
+  "css_use_suffix": false,
+  "hinting": true,
+  "units_per_em": 1000,
+  "ascent": 850,
+  "glyphs": [
+    {
+      "uid": "906348dc798a0d42715cc97c875e3ac6",
+      "css": "cyr-twitter",
+      "code": 62212,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "e331ff486a299c6bdf0056426c8fac53",
+      "css": "cyr-youtube",
+      "code": 61798,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "0fbfb1cd7a847c88ea4c141d0e1bbdb5",
+      "css": "cyr-instagram",
+      "code": 62253,
+      "src": "entypo"
+    },
+    {
+      "uid": "1145676a91138011729fa2909997af66",
+      "css": "cyr-linkedin",
+      "code": 62220,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "4743b088aa95d6f3b6b990e770d3b647",
+      "css": "cyr-facebook",
+      "code": 62216,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "1e32e1f8787cf3cb9f52f8850822dcb6",
+      "css": "cyr-engranajes",
+      "code": 59392,
+      "src": "elusive"
+    },
+    {
+      "uid": "x8m4z7b33cv1h2s784tjlam56uq40wtd",
+      "css": "cyr-usuarios",
+      "code": 59393,
+      "src": "typicons"
+    },
+    {
+      "uid": "6a7b9d4863bb7e6c79e9457a72d689b6",
+      "css": "cyr-herramientas",
+      "code": 59394,
+      "src": "entypo"
+    },
+    {
+      "uid": "5590d2f643b64d2d0757ae660f9c24cb",
+      "css": "cyr-estetoscopio",
+      "code": 61681,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8e6b311d40f1002fd6de7d1bdfdc7f17",
+      "css": "cyr-abierto",
+      "code": 61544,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "499b745a2e2485bdd059c3a53d048e5f",
+      "css": "cyr-cerrar",
+      "code": 59395,
+      "src": "elusive"
+    },
+    {
+      "uid": "4c4bb0011585456def6562bf27186b63",
+      "css": "cyr-cerrado",
+      "code": 61545,
+      "src": "mfglabs"
+    },
+    {
+      "uid": "1e7648f03fbdc28114a00b33b059b499",
+      "css": "cyr-extintor",
+      "code": 61748,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "dd6df3b754e8d0dbf09d9b24088f0442",
+      "css": "cyr-caja",
+      "code": 59396,
+      "src": "iconic"
+    },
+    {
+      "uid": "eb584be2c26fc95b6e8562f7ae88da55",
+      "css": "cyr-asistencia",
+      "code": 59397,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M915.5 597.2V575.6 522.1 395.1C915.5 177.2 738.3 0 520.4 0H449.3C231.4 0 54.2 177.2 54.2 395.1V522.1 575.6 680.4C54.2 757 116.5 819.4 193.1 819.4H267.7C294.2 819.4 315.7 797.9 315.7 771.4V431.1C315.7 404.6 294.2 383.2 267.7 383.2H193.1C178.1 383.2 163.7 385.6 150.1 390 152.8 227.3 286 95.9 449.3 95.9H520.4C683.7 95.9 816.8 227.3 819.6 390 806 385.6 791.6 383.2 776.6 383.2H702C675.5 383.2 654 404.6 654 431.1V771.4C654 797.9 675.5 819.4 702 819.4H776.6C803.6 819.4 828.8 811.6 850.1 798.2V832.5C850.1 872.1 817.9 904.3 778.3 904.3H546.8C520.4 904.3 499 925.7 499 952.1 499 978.6 520.4 1000 546.8 1000H778.3C870.7 1000 945.8 924.9 945.8 832.5V641.7C945.8 621.5 933.2 604.2 915.5 597.2Z",
+        "width": 1000
+      },
+      "search": [
+        "headphones-with-microphone"
+      ]
+    },
+    {
+      "uid": "472c4f1f57ef72e1d1744fb7d2e73c1e",
+      "css": "cyr-gorro",
+      "code": 59398,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M38.5 722.8C17.1 722.8-0.3 740.2-0.3 761.6-0.3 783 17.1 800.3 38.5 800.3 342.6 810.9 650.2 811.4 961.5 800.3 982.9 800.3 1000.3 783 1000.3 761.6 1000.3 740.2 982.9 722.8 961.5 722.8 652.1 711.9 344.4 712.1 38.5 722.8ZM473.2 191.6C453.4 191.6 437.5 207.5 437.5 227.3V258.5 405.8 417.8C437.5 426.4 430.5 433.4 421.9 433.4 413.2 433.4 406.3 426.4 406.3 417.8V264.2C272.7 293.3 161.9 383.5 104.6 504.1H93.8C76.4 504.1 62.5 518 62.5 535.3V660.3C62.5 662.6 62.8 664.8 63.2 666.9 62.8 674.8 62.5 682.8 62.5 690.8 207.5 685.9 352.9 683.5 498.7 683.4 644.5 683.4 790.8 685.8 937.5 690.7 937.5 682.7 937.2 674.8 936.8 666.9 937.2 664.8 937.5 662.6 937.5 660.3V535.3C937.5 518 923.6 504.1 906.3 504.1H895.4C838.1 383.5 727.3 293.3 593.8 264.2V417.8C593.8 426.4 586.8 433.4 578.1 433.4 569.5 433.4 562.5 426.4 562.5 417.8V405.8 258.5 227.3C562.5 207.5 546.6 191.6 526.8 191.6Z",
+        "width": 1000
+      },
+      "search": [
+        "gorro-seguridad"
+      ]
+    },
+    {
+      "uid": "6a9f3405aba67bcaee81e7ea38946b27",
+      "css": "cyr-movil",
+      "code": 59400,
+      "src": "linecons"
+    },
+    {
+      "uid": "wg849ixsobykxshs6efpc6fk4m0fq8bh",
+      "css": "cyr-correo",
+      "code": 59399,
+      "src": "typicons"
+    },
+    {
+      "uid": "38575a803c4da31ce20d77e1e1236bcb",
+      "css": "cyr-enviar",
+      "code": 61912,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "94aa5db477515f1da4ce43b239badb9e",
+      "css": "cyr-direccion",
+      "code": 62071,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "9d3e9faf68fd4e12def853f0d4e1173b",
+      "css": "cyr-whatsapp",
+      "code": 62002,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "c5fd349cbd3d23e4ade333789c29c729",
+      "css": "cyr-ojo",
+      "code": 59401,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "lnyme20kl7kh26it9yrqk7at10k6i0sf",
+      "css": "cyr-calidad",
+      "code": 59402,
+      "src": "modernpics"
+    },
+    {
+      "uid": "9c7fd7637a41b59a358cb70893f945a5",
+      "css": "cyr-cohete",
+      "code": 59403,
+      "src": "entypo"
+    },
+    {
+      "uid": "ed42a2d393650165b737216b5fe85c40",
+      "css": "cyr-fono",
+      "code": 62112,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "399ef63b1e23ab1b761dfbb5591fa4da",
+      "css": "cyr-flecha-der",
+      "code": 59404,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "d870630ff8f81e6de3958ecaeac532f2",
+      "css": "cyr-flecha-izq",
+      "code": 59405,
+      "src": "fontawesome"
+    }
+  ]
+}
